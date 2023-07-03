@@ -1,4 +1,4 @@
-import Person from './person.js';
+let {Person} = require("./person");
 
 let hobbies = ["bailar", "cantar", "futbol"];
 

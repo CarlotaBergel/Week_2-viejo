@@ -30,11 +30,11 @@ class Person{
 
     printHobbies(){
         
-        for(let i=0; i<hobbies.length; i++){
-            console.log(hobbies[i]);
+        for(let i=0; i<this.hobbies.length; i++){
+            console.log(this.hobbies[i]);
         }
         
     }
 }
-// export default Person;
-module.exports = Person;
+
+module.exports = {Person};
