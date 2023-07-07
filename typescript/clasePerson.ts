@@ -20,7 +20,7 @@ class Person{
         return añoNaciemiento
     }
 
-    setAddress(dir: string){
+    setAddress(dir: string):void{
         this.direccion = dir;
     }
 

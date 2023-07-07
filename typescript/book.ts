@@ -16,35 +16,35 @@ export class Book{
     getTitulo(): string{
         return this.titulo
     }
-    setTitulo(tit: string){
+    setTitulo(tit: string):void{
         this.titulo = tit;
     }
     getnumPag(): number{
         return this.numPag;
     }
-    setnumPag(npag: number){
+    setnumPag(npag: number):void{
         this.numPag = npag;
     }
     getIsbn(): string{
         return this.isbn;
     }
-    setIsbn(isbn: string){
+    setIsbn(isbn: string):void{
         this.isbn = isbn;
     }
     getAutor(): string{
         return this.autor;
     }
-    setAutor(autor: string){
+    setAutor(autor: string):void{
         this.autor = autor;
     }
     getEditorial(): string{
         return this.editorial
     }
-    setEditorial(edit: string){
+    setEditorial(edit: string):void{
         this.editorial = edit;
     }
     
-    toString(){
+    toString():void{
         console.log("Title - " + this.titulo +"\n" + "Numer of Pages - " + this.numPag + "\n" + "ISBN - " + this.isbn + "\n" + "Author - " + this.autor + "\n" + "Editorial - " + this.editorial)
     }
 }

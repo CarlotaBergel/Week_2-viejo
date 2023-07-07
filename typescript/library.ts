@@ -13,17 +13,17 @@ export class Library{
     getAddress(): string{
         return this.address
     }
-    setAddress(direccion: string){
+    setAddress(direccion: string):void{
         this.address = direccion;
     }
     getManager(): string{
         return this.manager
     }
-    setManager(manager: string){
+    setManager(manager: string):void{
         this.manager = manager;
     }
 
-    toString(){
+    toString():void{
         for(let libro of this.books){
             console.log("Libro \n");
             libro.toString();
