@@ -10,3 +10,4 @@ let books: Book[] = [book1,book2]
 let libreria: Library = new Library (books, "Calle mar cantabrico", "Jose Mota");
 
 libreria.toString();
+console.log(libreria.toString());

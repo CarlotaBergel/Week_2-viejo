@@ -10,39 +10,42 @@ export class Library{
         this.address = direccion;
         this.manager = manager;
     }
+
     getAddress(): string{
         return this.address
     }
+
     setAddress(direccion: string):void{
         this.address = direccion;
     }
+
     getManager(): string{
         return this.manager
     }
+
     setManager(manager: string):void{
         this.manager = manager;
     }
 
-    toString():void{
+    toString():string{
+
+        // El método tostring(), no es correcto,  dale una vuelta a la estructura. 
         for(let libro of this.books){
-            console.log("Libro \n");
+            console.log("Libro");
             libro.toString();
             console.log("\n");
         }
-        console.log("address - " + this.address + "\n" + "manager - " + this.manager);
+        return "address - " + this.address + "\n" + "manager - " + this.manager;
     }
+
     getNumberOfBooks(){
         return this.books.length
     }
-    findByAuthor(autor:String){
-        
-        let librosAutores: Book[] = [];
-        for (let i = 0; i < this.books.length; i++){
-          
-            if(autor == this.books[i].getAutor()){
-                librosAutores.push(this.books[i]);
-            }
-        }
-        return librosAutores;
+
+    findByAuthor(autor:String):Book[]{
+      
+        return this.books.filter(valor => valor.getAutor() == autor)
     }
 }
+
+Book.toString()
